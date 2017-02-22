@@ -12,28 +12,28 @@
 
 
 
-greeting:
-  UserSays:
-  - hi
-  - hello
-  - start
-  - begin
-  - launch
-
 give-color:
+
   UserSays:
   - my color is blue
   - Its blue
   - I like red
   - My favorite color is red
   - blue
-
+  
   Annotations:
   - blue: sys.color
   - red: sys.color
 
-user-gives-gender:
+greeting:
+  UserSays:
+    - hi
+    - hello
+    - start
+    - begin
+    - launch
 
+user-gives-gender:
   UserSays:
   - male
   - Im a female
