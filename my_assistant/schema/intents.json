@@ -1,259 +1,259 @@
 [
     {
-        "id": "a489097c-9ee9-4b0b-8f84-38fb4100e933",
-        "events": [],
-        "contexts": [],
-        "responses": [
-            {
-                "parameters": [
-                    {
-                        "required": true,
-                        "defaultValue": "",
-                        "value": "$gender",
-                        "isList": false,
-                        "name": "gender",
-                        "dataType": "@gender"
-                    }
-                ],
-                "messages": [],
-                "action": "ask_for_color",
-                "affectedContexts": [],
-                "resetContexts": false
-            }
-        ],
-        "userSays": [
-            {
-                "count": 0,
-                "data": [
-                    {
-                        "text": ""
-                    },
-                    {
-                        "meta": "@gender",
-                        "userDefined": true,
-                        "alias": "gender",
-                        "text": "male"
-                    }
-                ],
-                "isTemplate": false
-            },
-            {
-                "count": 0,
-                "data": [
-                    {
-                        "text": "Im a "
-                    },
-                    {
-                        "meta": "@gender",
-                        "userDefined": true,
-                        "alias": "gender",
-                        "text": "female"
-                    }
-                ],
-                "isTemplate": false
-            },
-            {
-                "count": 0,
-                "data": [
-                    {
-                        "text": ""
-                    },
-                    {
-                        "meta": "@gender",
-                        "userDefined": true,
-                        "alias": "gender",
-                        "text": "girl"
-                    }
-                ],
-                "isTemplate": false
-            }
-        ],
-        "auto": true,
-        "webhookUsed": true,
-        "fallbackIntent": false,
-        "name": "user-gives-gender",
-        "webhookForSlotFilling": true,
-        "templates": [],
-        "priority": 500000
-    },
-    {
-        "id": "e8c6c5fb-7280-4439-a63f-cd7cf4a36b43",
-        "events": [],
-        "contexts": [],
-        "responses": [
-            {
-                "parameters": [
-                    {
-                        "required": true,
-                        "defaultValue": "",
-                        "value": "$color",
-                        "isList": false,
-                        "name": "color",
-                        "dataType": "@sys.color"
-                    }
-                ],
-                "messages": [],
-                "action": "repeat_color",
-                "affectedContexts": [],
-                "resetContexts": false
-            }
-        ],
-        "userSays": [
-            {
-                "count": 0,
-                "data": [
-                    {
-                        "text": "my color is "
-                    },
-                    {
-                        "meta": "@sys.color",
-                        "userDefined": true,
-                        "alias": "color",
-                        "text": "blue"
-                    }
-                ],
-                "isTemplate": false
-            },
-            {
-                "count": 0,
-                "data": [
-                    {
-                        "text": "Its "
-                    },
-                    {
-                        "meta": "@sys.color",
-                        "userDefined": true,
-                        "alias": "color",
-                        "text": "blue"
-                    }
-                ],
-                "isTemplate": false
-            },
-            {
-                "count": 0,
-                "data": [
-                    {
-                        "text": "I like "
-                    },
-                    {
-                        "meta": "@sys.color",
-                        "userDefined": true,
-                        "alias": "color",
-                        "text": "red"
-                    }
-                ],
-                "isTemplate": false
-            },
-            {
-                "count": 0,
-                "data": [
-                    {
-                        "text": "My favorite color is "
-                    },
-                    {
-                        "meta": "@sys.color",
-                        "userDefined": true,
-                        "alias": "color",
-                        "text": "red"
-                    }
-                ],
-                "isTemplate": false
-            },
-            {
-                "count": 0,
-                "data": [
-                    {
-                        "text": ""
-                    },
-                    {
-                        "meta": "@sys.color",
-                        "userDefined": true,
-                        "alias": "color",
-                        "text": "blue"
-                    }
-                ],
-                "isTemplate": false
-            }
-        ],
-        "auto": true,
-        "webhookUsed": true,
-        "fallbackIntent": false,
-        "name": "give-color",
-        "webhookForSlotFilling": true,
-        "templates": [],
-        "priority": 500000
-    },
-    {
-        "id": "68378a45-4eac-434c-8bf6-a405eee321e3",
-        "events": [],
-        "contexts": [],
         "responses": [
             {
                 "parameters": [],
                 "messages": [],
                 "action": "greet_and_start",
-                "affectedContexts": [],
-                "resetContexts": false
+                "resetContexts": false,
+                "affectedContexts": []
             }
         ],
+        "webhookUsed": true,
+        "name": "greeting",
+        "contexts": [],
+        "priority": 500000,
+        "webhookForSlotFilling": true,
+        "auto": true,
+        "templates": [],
+        "id": "68378a45-4eac-434c-8bf6-a405eee321e3",
+        "fallbackIntent": false,
         "userSays": [
             {
-                "count": 0,
+                "isTemplate": false,
                 "data": [
                     {
                         "userDefined": false,
                         "text": "hi"
                     }
                 ],
-                "isTemplate": false
+                "count": 0
             },
             {
-                "count": 0,
+                "isTemplate": false,
                 "data": [
                     {
                         "userDefined": false,
                         "text": "hello"
                     }
                 ],
-                "isTemplate": false
+                "count": 0
             },
             {
-                "count": 0,
+                "isTemplate": false,
                 "data": [
                     {
                         "userDefined": false,
                         "text": "start"
                     }
                 ],
-                "isTemplate": false
+                "count": 0
             },
             {
-                "count": 0,
+                "isTemplate": false,
                 "data": [
                     {
                         "userDefined": false,
                         "text": "begin"
                     }
                 ],
-                "isTemplate": false
+                "count": 0
             },
             {
-                "count": 0,
+                "isTemplate": false,
                 "data": [
                     {
                         "userDefined": false,
                         "text": "launch"
                     }
                 ],
-                "isTemplate": false
+                "count": 0
             }
         ],
-        "auto": true,
+        "events": []
+    },
+    {
+        "responses": [
+            {
+                "parameters": [
+                    {
+                        "defaultValue": "",
+                        "value": "$color",
+                        "name": "color",
+                        "required": true,
+                        "isList": false,
+                        "dataType": "@sys.color"
+                    }
+                ],
+                "messages": [],
+                "action": "repeat_color",
+                "resetContexts": false,
+                "affectedContexts": []
+            }
+        ],
         "webhookUsed": true,
-        "fallbackIntent": false,
-        "name": "greeting",
+        "name": "give-color",
+        "contexts": [],
+        "priority": 500000,
         "webhookForSlotFilling": true,
+        "auto": true,
         "templates": [],
-        "priority": 500000
+        "id": "e8c6c5fb-7280-4439-a63f-cd7cf4a36b43",
+        "fallbackIntent": false,
+        "userSays": [
+            {
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": "my color is "
+                    },
+                    {
+                        "alias": "color",
+                        "userDefined": true,
+                        "meta": "@sys.color",
+                        "text": "blue"
+                    }
+                ],
+                "count": 0
+            },
+            {
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": "Its "
+                    },
+                    {
+                        "alias": "color",
+                        "userDefined": true,
+                        "meta": "@sys.color",
+                        "text": "blue"
+                    }
+                ],
+                "count": 0
+            },
+            {
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": "I like "
+                    },
+                    {
+                        "alias": "color",
+                        "userDefined": true,
+                        "meta": "@sys.color",
+                        "text": "red"
+                    }
+                ],
+                "count": 0
+            },
+            {
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": "My favorite color is "
+                    },
+                    {
+                        "alias": "color",
+                        "userDefined": true,
+                        "meta": "@sys.color",
+                        "text": "red"
+                    }
+                ],
+                "count": 0
+            },
+            {
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": ""
+                    },
+                    {
+                        "alias": "color",
+                        "userDefined": true,
+                        "meta": "@sys.color",
+                        "text": "blue"
+                    }
+                ],
+                "count": 0
+            }
+        ],
+        "events": []
+    },
+    {
+        "responses": [
+            {
+                "parameters": [
+                    {
+                        "defaultValue": "",
+                        "value": "$gender",
+                        "name": "gender",
+                        "required": true,
+                        "isList": false,
+                        "dataType": "@gender"
+                    }
+                ],
+                "messages": [],
+                "action": "ask_for_color",
+                "resetContexts": false,
+                "affectedContexts": []
+            }
+        ],
+        "webhookUsed": true,
+        "name": "user-gives-gender",
+        "contexts": [],
+        "priority": 500000,
+        "webhookForSlotFilling": true,
+        "auto": true,
+        "templates": [],
+        "id": "a489097c-9ee9-4b0b-8f84-38fb4100e933",
+        "fallbackIntent": false,
+        "userSays": [
+            {
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": ""
+                    },
+                    {
+                        "alias": "gender",
+                        "userDefined": true,
+                        "meta": "@gender",
+                        "text": "male"
+                    }
+                ],
+                "count": 0
+            },
+            {
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": "Im a "
+                    },
+                    {
+                        "alias": "gender",
+                        "userDefined": true,
+                        "meta": "@gender",
+                        "text": "female"
+                    }
+                ],
+                "count": 0
+            },
+            {
+                "isTemplate": false,
+                "data": [
+                    {
+                        "text": ""
+                    },
+                    {
+                        "alias": "gender",
+                        "userDefined": true,
+                        "meta": "@gender",
+                        "text": "girl"
+                    }
+                ],
+                "count": 0
+            }
+        ],
+        "events": []
     }
 ]

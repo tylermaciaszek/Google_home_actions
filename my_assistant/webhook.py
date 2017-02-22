@@ -19,7 +19,7 @@ def ask_for_color(gender):
         gender_msg = 'Sup bro!'
 
     else:
-        gender_msg = 'Haay gurl!'
+        gender_msg = 'Sup girl!'
 
     speech = gender_msg + ' What is your favorite color?'
     return ask(speech)
@@ -27,7 +27,7 @@ def ask_for_color(gender):
 
 @assist.action('give-color', mapping={'color': 'sys.color'})
 def repeat_color(color):
-    speech = 'Ok, {} is an okay color I guess.'.format(color)
+    speech = '{} is an okay color I guess.'.format(color)
     return ask(speech)
 
 

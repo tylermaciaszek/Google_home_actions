@@ -2,21 +2,21 @@
     {
         "entries": [
             {
+                "value": "male",
                 "synonyms": [
                     "man",
                     "boy",
                     "guy",
                     "dude"
-                ],
-                "value": "male"
+                ]
             },
             {
+                "value": "female",
                 "synonyms": [
                     "woman",
                     "girl",
                     "gal"
-                ],
-                "value": "female"
+                ]
             }
         ],
         "id": "0a520e47-ed0f-4fa8-b0df-7aadf77dd8fe",
