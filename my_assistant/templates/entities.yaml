@@ -16,5 +16,5 @@
 
 
 gender:
-- 
-- 
+    - male: ['man', 'boy', 'guy', 'dude']
+    - female: ['woman', 'girl', 'gal']
