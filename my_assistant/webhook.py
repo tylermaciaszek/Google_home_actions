@@ -7,9 +7,9 @@ assist = Assistant(app)
 logging.getLogger('flask_assistant').setLevel(logging.DEBUG)
 
 
-@assist.action('greeting')
+@assist.action("greeting")
 def greet_and_start():
-    speech = "Hey! Are you male or female?"
+    speech = 'Hey! Are you male or female?'
     return ask(speech)
 
 
@@ -19,7 +19,7 @@ def ask_for_color(gender):
         gender_msg = 'Sup bro!'
 
     else:
-        gender_msg = 'Sup girl!'
+        gender_msg = 'Haay gurl!'
 
     speech = gender_msg + ' What is your favorite color?'
     return ask(speech)
@@ -27,9 +27,9 @@ def ask_for_color(gender):
 
 @assist.action('give-color', mapping={'color': 'sys.color'})
 def repeat_color(color):
-    speech = '{} is an okay color I guess.'.format(color)
+    speech = 'Ok, {} is an okay color I guess.'.format(color)
     return ask(speech)
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=true, host='0.0.0.0', port=5000)
